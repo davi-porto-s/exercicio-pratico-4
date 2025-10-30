@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Contato</title>
+  <style>
+    body { font-family: Georgia, 'Times New Roman', Times, serif; margin: 0; padding: 24px; }
+    .caixa {
+      border: 3px solid #c00;
+      border-radius: 6px;
+      padding: 18px 18px 24px;
+      margin: 0 0 28px;
+    }
+    label { display: block; margin: 14px 0 6px; }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      display: block;
+      width: 320px;
+      padding: 6px;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+    textarea { height: 140px; resize: vertical; }
+    button {
+      margin-top: 12px;
+      padding: 8px 14px;
+      border: 1px solid #999;
+      background: #e9e9e9;
+      border-radius: 4px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 3) Formulário de Contato -->
+  <section class="caixa">
+    <h1 class="titulo">Entre em Contato</h1>
+
+    <form>
+      <label for="contato-nome">Nome:</label>
+      <input type="text" id="contato-nome" name="contato-nome" required />
+
+      <label for="contato-email">E-mail:</label>
+      <input type="email" id="contato-email" name="contato-email" required />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+</body>
+</html>
